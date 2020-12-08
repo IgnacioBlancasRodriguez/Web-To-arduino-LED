@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <style>
+    @keyframes bgAnim{
+      0%  {background-color: #10ac84;}
+      10% {background-color: #0abde3;}
+      20% {background-color: #ee5253;}
+      30% {background-color: #ff9f43;}
+      40% {background-color: #f368e0;}
+      50% {background-color: #ff9ff3;}
+      60% {background-color: #feca57;}
+      70% {background-color: #ff6b6b;}
+      80% {background-color: #48dbfb;}
+      90% {background-color: #1dd1a1;}
+      100%  {background-color: #10ac84;}
+    }
+    body {
+      animation-name: bgAnim;
+      animation-duration: 40s;
+      animation-iteration-count: infinite;
+    }
+    #app {
+      font-family: Dosis,sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: center;
+    }
+  </style>
+</html>
